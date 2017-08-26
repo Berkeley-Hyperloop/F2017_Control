@@ -10,8 +10,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="PressureSensorSubVI.vi" Type="VI" URL="../subVIs/PressureSensorSubVI.vi"/>
-		<Item Name="TempSensorSubVI.vi" Type="VI" URL="../subVIs/TempSensorSubVI.vi"/>
+		<Item Name="SubVIs" Type="Folder">
+			<Item Name="TemperatureSensorSubVI.vi" Type="VI" URL="../subVIs/TemperatureSensorSubVI.vi"/>
+		</Item>
+		<Item Name="MainControlVI.vi" Type="VI" URL="../MainControlVI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
