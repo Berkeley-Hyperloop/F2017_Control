@@ -11,7 +11,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="SubVIs" Type="Folder">
-			<Item Name="TemperatureSensorSubVI.vi" Type="VI" URL="../subVIs/TemperatureSensorSubVI.vi"/>
+			<Item Name="GenericLinearSensorSubVI.vi" Type="VI" URL="../subVIs/GenericLinearSensorSubVI.vi"/>
 		</Item>
 		<Item Name="MainControlVI.vi" Type="VI" URL="../MainControlVI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
