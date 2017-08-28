@@ -14,8 +14,10 @@
 			<Item Name="GenericLinearSensorSubVI.vi" Type="VI" URL="../subVIs/GenericLinearSensorSubVI.vi"/>
 			<Item Name="TMP36SensorSubVI.vi" Type="VI" URL="../subVIs/TMP36SensorSubVI.vi"/>
 		</Item>
-		<Item Name="MainControlVI.vi" Type="VI" URL="../MainControlVI.vi"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="MainControlGUI.vi" Type="VI" URL="../MainControlGUI.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="podGlobals_9066.vi" Type="VI" URL="../../../S2017_ControlCode/src/mainControl/podGlobals_9066.vi"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="MainControlVI" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
@@ -44,7 +46,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{46E94D24-BAC2-4819-AF77-3083FD1DAB15}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MainControlVI.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MainControlGUI.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
