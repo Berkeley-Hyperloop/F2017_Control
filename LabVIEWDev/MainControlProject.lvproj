@@ -12,6 +12,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="GenericLinearSensorSubVI.vi" Type="VI" URL="../subVIs/GenericLinearSensorSubVI.vi"/>
+			<Item Name="TMP36SensorSubVI.vi" Type="VI" URL="../subVIs/TMP36SensorSubVI.vi"/>
 		</Item>
 		<Item Name="MainControlVI.vi" Type="VI" URL="../MainControlVI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
