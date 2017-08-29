@@ -11,8 +11,14 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="SubVIs" Type="Folder">
-			<Item Name="GenericLinearSensorSubVI.vi" Type="VI" URL="../subVIs/GenericLinearSensorSubVI.vi"/>
-			<Item Name="TMP36SensorSubVI.vi" Type="VI" URL="../subVIs/TMP36SensorSubVI.vi"/>
+			<Item Name="GenericSensors" Type="Folder">
+				<Item Name="GenericLinearSensorSubVI.vi" Type="VI" URL="../subVIs/GenericSensors/GenericLinearSensorSubVI.vi"/>
+			</Item>
+			<Item Name="TemperatureSensors" Type="Folder">
+				<Item Name="LM335ZSubVI.vi" Type="VI" URL="../subVIs/TemperatureSensors/LM335ZSubVI.vi"/>
+				<Item Name="MCP9700SubVI.vi" Type="VI" URL="../subVIs/TemperatureSensors/MCP9700SubVI.vi"/>
+				<Item Name="TMP36SubVI.vi" Type="VI" URL="../subVIs/TemperatureSensors/TMP36SubVI.vi"/>
+			</Item>
 		</Item>
 		<Item Name="MainControlGUI.vi" Type="VI" URL="../MainControlGUI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -50,10 +56,10 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/SubVIs/GenericLinearSensorSubVI.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref"></Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/SubVIs/TMP36SensorSubVI.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref"></Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>
 				<Property Name="TgtF_companyName" Type="Str">UC Berkeley</Property>
