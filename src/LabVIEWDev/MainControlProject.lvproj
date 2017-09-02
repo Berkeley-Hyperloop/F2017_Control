@@ -21,9 +21,7 @@
 			</Item>
 		</Item>
 		<Item Name="MainControlGUI.vi" Type="VI" URL="../MainControlGUI.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="podGlobals_9066.vi" Type="VI" URL="../../../S2017_ControlCode/src/mainControl/podGlobals_9066.vi"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="MainControlVI" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
