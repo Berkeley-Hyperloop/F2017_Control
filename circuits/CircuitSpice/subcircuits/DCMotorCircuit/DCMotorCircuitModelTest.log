@@ -1,0 +1,21 @@
+Circuit: * C:\Users\Laptop\Desktop\Hyperloop\F2017_Control\circuits\CircuitSpice\subcircuits\DCMotorCircuit\DCMotorCircuitModelTest.asc
+
+.OP point found by inspection.
+
+Date: Sun Sep 03 15:21:45 2017
+Total elapsed time: 1.284 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 232204
+traniter = 232204
+tranpoints = 86181
+accept = 61767
+rejected = 24414
+matrix size = 19
+fillins = 7
+solver = Normal
+Matrix Compiler1: 1020 bytes object code size  0.3/0.1/[0.1]
+Matrix Compiler2: 1.41 KB object code size  0.1/0.2/[0.0]
+
