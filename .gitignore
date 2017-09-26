@@ -1,1 +1,3 @@
 src/builds/*
+circuits/CircuitSpice/*/*.raw
+circuits/CircuitSpice/subcircuits/*/*.raw
