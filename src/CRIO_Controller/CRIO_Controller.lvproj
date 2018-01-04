@@ -19,10 +19,12 @@
 			<Item Name="NI-9381_SoftPanel.vi" Type="VI" URL="../ControlModules/NI-9381_SoftPanel.vi"/>
 			<Item Name="NI-9870_SoftPanel.vi" Type="VI" URL="../ControlModules/NI-9870_SoftPanel.vi"/>
 		</Item>
-		<Item Name="GlobalControlVariables.vi" Type="VI" URL="../GlobalControlVariables.vi"/>
+		<Item Name="HelperSubVIs" Type="Folder">
+			<Item Name="GlobalControlVariables.vi" Type="VI" URL="../HelperSubVIs/GlobalControlVariables.vi"/>
+			<Item Name="WaitForTCPResponse.vi" Type="VI" URL="../HelperSubVIs/WaitForTCPResponse.vi"/>
+			<Item Name="WriteTCP.vi" Type="VI" URL="../HelperSubVIs/WriteTCP.vi"/>
+		</Item>
 		<Item Name="MainControlPanel.vi" Type="VI" URL="../MainControlPanel.vi"/>
-		<Item Name="WaitForTCPResponse.vi" Type="VI" URL="../WaitForTCPResponse.vi"/>
-		<Item Name="WriteTCP.vi" Type="VI" URL="../WriteTCP.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -31,6 +33,13 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Convert Thermistor Reading (scaler).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/TradDaqScaling.llb/Convert Thermistor Reading (scaler).vi"/>
+				<Item Name="Convert Thermistor Reading (waveform).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/TradDaqScaling.llb/Convert Thermistor Reading (waveform).vi"/>
+				<Item Name="Convert Thermistor Reading.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/TradDaqScaling.llb/Convert Thermistor Reading.vi"/>
+				<Item Name="Convert Thermocouple Reading (array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/TradDaqScaling.llb/Convert Thermocouple Reading (array).vi"/>
+				<Item Name="Convert Thermocouple Reading (scaler).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/TradDaqScaling.llb/Convert Thermocouple Reading (scaler).vi"/>
+				<Item Name="Convert Thermocouple Reading (waveform).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/TradDaqScaling.llb/Convert Thermocouple Reading (waveform).vi"/>
+				<Item Name="Convert Thermocouple Reading.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/TradDaqScaling.llb/Convert Thermocouple Reading.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
@@ -63,10 +72,12 @@
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Temperature to Volts.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/TradDaqScaling.llb/Temperature to Volts.vi"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
+				<Item Name="Volts to Temperature.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/TradDaqScaling.llb/Volts to Temperature.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 		</Item>
