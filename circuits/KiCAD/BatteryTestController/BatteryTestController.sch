@@ -1,0 +1,240 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_NMOS_GDS Q1
+U 1 1 5A6D6C3D
+P 3650 2150
+F 0 "Q1" H 3850 2200 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 3850 2100 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-2" H 3850 2250 50  0001 C CNN
+F 3 "" H 3650 2150 50  0001 C CNN
+	1    3650 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR01
+U 1 1 5A6D6D46
+P 3750 1350
+F 0 "#PWR01" H 3750 1200 50  0001 C CNN
+F 1 "+BATT" H 3750 1490 50  0000 C CNN
+F 2 "" H 3750 1350 50  0001 C CNN
+F 3 "" H 3750 1350 50  0001 C CNN
+	1    3750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5A6D6D66
+P 3750 1650
+F 0 "R3" V 3830 1650 50  0000 C CNN
+F 1 "1" V 3750 1650 50  0000 C CNN
+F 2 "" V 3680 1650 50  0001 C CNN
+F 3 "" H 3750 1650 50  0001 C CNN
+	1    3750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L -BATT #PWR02
+U 1 1 5A6D6DCE
+P 3750 3150
+F 0 "#PWR02" H 3750 3000 50  0001 C CNN
+F 1 "-BATT" H 3750 3290 50  0000 C CNN
+F 2 "" H 3750 3150 50  0001 C CNN
+F 3 "" H 3750 3150 50  0001 C CNN
+	1    3750 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A6D6DFA
+P 3400 2400
+F 0 "R2" V 3480 2400 50  0000 C CNN
+F 1 "10K" V 3400 2400 50  0000 C CNN
+F 2 "" V 3330 2400 50  0001 C CNN
+F 3 "" H 3400 2400 50  0001 C CNN
+	1    3400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A6D6E3A
+P 3050 2400
+F 0 "R1" V 3130 2400 50  0000 C CNN
+F 1 "100" V 3050 2400 50  0000 C CNN
+F 2 "" V 2980 2400 50  0001 C CNN
+F 3 "" H 3050 2400 50  0001 C CNN
+	1    3050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5A6D6E78
+P 3050 2800
+F 0 "D1" H 3050 2900 50  0000 C CNN
+F 1 "LED" H 3050 2700 50  0000 C CNN
+F 2 "" H 3050 2800 50  0001 C CNN
+F 3 "" H 3050 2800 50  0001 C CNN
+	1    3050 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D2
+U 1 1 5A6D6F37
+P 4100 1650
+F 0 "D2" H 4100 1750 50  0000 C CNN
+F 1 "D" H 4100 1550 50  0000 C CNN
+F 2 "" H 4100 1650 50  0001 C CNN
+F 3 "" H 4100 1650 50  0001 C CNN
+	1    4100 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2150 3450 2150
+Wire Wire Line
+	3750 1350 3750 1500
+Wire Wire Line
+	3750 1800 3750 1950
+Wire Wire Line
+	3750 2350 3750 3150
+Wire Wire Line
+	3400 2550 3400 2700
+Wire Wire Line
+	3400 2700 3750 2700
+Connection ~ 3750 2700
+Wire Wire Line
+	3400 2250 3400 2150
+Connection ~ 3400 2150
+Wire Wire Line
+	3050 2250 3050 2150
+Connection ~ 3050 2150
+Wire Wire Line
+	3050 2550 3050 2650
+Wire Wire Line
+	3050 2950 3050 3050
+Wire Wire Line
+	2250 3050 3750 3050
+Connection ~ 3750 3050
+Wire Wire Line
+	4100 1800 4100 1850
+Wire Wire Line
+	4100 1850 3750 1850
+Connection ~ 3750 1850
+Wire Wire Line
+	4100 1500 4100 1450
+Wire Wire Line
+	4100 1450 3750 1450
+Connection ~ 3750 1450
+$Comp
+L Conn_01x02 J1
+U 1 1 5A6D7146
+P 2550 2450
+F 0 "J1" H 2550 2550 50  0000 C CNN
+F 1 "Conn_01x02" H 2550 2250 50  0000 C CNN
+F 2 "" H 2550 2450 50  0001 C CNN
+F 3 "" H 2550 2450 50  0001 C CNN
+	1    2550 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3050 2250 2550
+Wire Wire Line
+	2250 2550 2350 2550
+Connection ~ 3050 3050
+Wire Wire Line
+	2350 2450 2250 2450
+Wire Wire Line
+	2250 2450 2250 2150
+$Comp
+L +BATT #PWR03
+U 1 1 5A6D7261
+P 2300 1250
+F 0 "#PWR03" H 2300 1100 50  0001 C CNN
+F 1 "+BATT" H 2300 1390 50  0000 C CNN
+F 2 "" H 2300 1250 50  0001 C CNN
+F 3 "" H 2300 1250 50  0001 C CNN
+	1    2300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L -BATT #PWR04
+U 1 1 5A6D7281
+P 2700 1450
+F 0 "#PWR04" H 2700 1300 50  0001 C CNN
+F 1 "-BATT" H 2700 1590 50  0000 C CNN
+F 2 "" H 2700 1450 50  0001 C CNN
+F 3 "" H 2700 1450 50  0001 C CNN
+	1    2700 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5A6D729C
+P 2700 1250
+F 0 "#FLG05" H 2700 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2700 1400 50  0000 C CNN
+F 2 "" H 2700 1250 50  0001 C CNN
+F 3 "" H 2700 1250 50  0001 C CNN
+	1    2700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 5A6D72D1
+P 2300 1450
+F 0 "#FLG06" H 2300 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2300 1600 50  0000 C CNN
+F 2 "" H 2300 1450 50  0001 C CNN
+F 3 "" H 2300 1450 50  0001 C CNN
+	1    2300 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 1250 2300 1450
+Wire Wire Line
+	2700 1450 2700 1250
+$EndSCHEMATC
