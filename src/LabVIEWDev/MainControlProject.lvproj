@@ -20,6 +20,8 @@
 				<Item Name="TMP36SubVI.vi" Type="VI" URL="../subVIs/TemperatureSensors/TMP36SubVI.vi"/>
 			</Item>
 		</Item>
+		<Item Name="GUI_StateEnum.ctl" Type="VI" URL="../GUI_StateEnum.ctl"/>
+		<Item Name="GUI_StateVars.ctl" Type="VI" URL="../GUI_StateVars.ctl"/>
 		<Item Name="MainControlGUI.vi" Type="VI" URL="../MainControlGUI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
