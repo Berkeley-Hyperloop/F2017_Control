@@ -14,16 +14,38 @@
 			<Item Name="GenericSensors" Type="Folder">
 				<Item Name="GenericLinearSensorSubVI.vi" Type="VI" URL="../subVIs/GenericSensors/GenericLinearSensorSubVI.vi"/>
 			</Item>
+			<Item Name="TCPHelpers" Type="Folder">
+				<Item Name="CRIO_ReadAndParseTCP.vi" Type="VI" URL="../subVIs/TCPHelpers/CRIO_ReadAndParseTCP.vi"/>
+				<Item Name="CRIO_TCPStateSelector.vi" Type="VI" URL="../subVIs/TCPHelpers/CRIO_TCPStateSelector.vi"/>
+				<Item Name="ListenParse_SubVI.vi" Type="VI" URL="../subVIs/TCPHelpers/ListenParse_SubVI.vi"/>
+				<Item Name="ReadParse_SubVI.vi" Type="VI" URL="../subVIs/TCPHelpers/ReadParse_SubVI.vi"/>
+				<Item Name="ReadPoll_SubVI.vi" Type="VI" URL="../subVIs/TCPHelpers/ReadPoll_SubVI.vi"/>
+				<Item Name="TCP_Read_Enum.ctl" Type="VI" URL="../subVIs/TCPHelpers/TCP_Read_Enum.ctl"/>
+				<Item Name="TCPReceiveComparer.vi" Type="VI" URL="../subVIs/TCPHelpers/TCPReceiveComparer.vi"/>
+				<Item Name="WriteString_SubVI.vi" Type="VI" URL="../subVIs/TCPHelpers/WriteString_SubVI.vi"/>
+			</Item>
 			<Item Name="TemperatureSensors" Type="Folder">
 				<Item Name="LM335ZSubVI.vi" Type="VI" URL="../subVIs/TemperatureSensors/LM335ZSubVI.vi"/>
 				<Item Name="MCP9700SubVI.vi" Type="VI" URL="../subVIs/TemperatureSensors/MCP9700SubVI.vi"/>
 				<Item Name="TMP36SubVI.vi" Type="VI" URL="../subVIs/TemperatureSensors/TMP36SubVI.vi"/>
 			</Item>
 		</Item>
+		<Item Name="CRIO_StateEnum.ctl" Type="VI" URL="../CRIO_StateEnum.ctl"/>
+		<Item Name="CRIO_StateVars.ctl" Type="VI" URL="../CRIO_StateVars.ctl"/>
 		<Item Name="GUI_StateEnum.ctl" Type="VI" URL="../GUI_StateEnum.ctl"/>
 		<Item Name="GUI_StateVars.ctl" Type="VI" URL="../GUI_StateVars.ctl"/>
+		<Item Name="MainControlCRIO.vi" Type="VI" URL="../MainControlCRIO.vi"/>
 		<Item Name="MainControlGUI.vi" Type="VI" URL="../MainControlGUI.vi"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Internecine Avoider.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/Internecine Avoider.vi"/>
+				<Item Name="TCP Listen Internal List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen Internal List.vi"/>
+				<Item Name="TCP Listen List Operations.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen List Operations.ctl"/>
+				<Item Name="TCP Listen.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen.vi"/>
+			</Item>
+		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="MainControlVI" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
